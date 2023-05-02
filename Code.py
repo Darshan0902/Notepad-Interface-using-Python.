@@ -1,7 +1,7 @@
 import pygame , sys , os , math
 from pygame.locals import*
 
-## Displaying the constants ##
+# Displaying the constants #
 
 DISPLAY_WIDTH = 760
 DISPLAY_HEIGHT = 500
@@ -14,7 +14,7 @@ DOWN = "down"
 RIGHT = "right"
 LEFT = "left"
 
-## COLORS ##
+# CHOOSING COLORS #
 
 #            R    G    B
 GRAY     = (100, 100, 100)
@@ -32,3 +32,10 @@ COMBLUE  = (233, 232, 255)
 
 BGCOLOR = WHITE
 TEXTCOLOR = BLACK
+
+
+def main():
+    global FPSCLOCK
+    pygame.init()
+    FPSCLOCK = pygame.time.Clock()
+    
