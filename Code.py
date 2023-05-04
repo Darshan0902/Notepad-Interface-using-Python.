@@ -54,5 +54,30 @@ def main():
     cameray      = 0
     mouseClicked = False
     mouseX       = 0
-    mouseY       = 
+    mouseY       = 0
+    
+    displaySurf = pygame.display.set_mode((windowWidth, windowHeight), RESIZABLE)    
+    displaySurf.fill(BGCOLOR)
+    displaySurf.convert()
+    pygame.display.update()
+    
+    pygame.display.set_caption('Notepad')
+    mainFont = pygame.font.SysFont('Helvetica', TEXTHEIGHT)
+    
+    cursorRect = getCursorRect(STARTX, STARTY + (TEXTHEIGHT + (TEXTHEIGHT/4)), mainFont, camerax, cameray)
+    
+    ## The main loop detects user input, displays the text on the screen, displays the cursor on the screen, and adjusts the camera view as per as the necessity...
+    
+    while True:
+                camerax, cameray = adjustCamera(mainList, lineNumber, insertPoint, cursorRect, mainFont, camerax, cameray, windowWidth, windowHeight)
+                 newChar, typeChar, deleteKey, returnKey, directionKey, windowWidth, windowHeight, mouseX, mouseY, mouseClicked= getInput(windowWidth, windowHeight)
+                
+                  if newChar == 'escape':
+                         mainList = saveAndLoadScreen(mainList, windowWidth, windowHeight, displaySurf, mainFont)
+                         newChar = False
+                         insertPoint = 0
+                         lineNumber = 0
+            mainList,lineNumber, insertPoint, cursorRect = displayText(mainFont, newChar, typeChar, mainList, deleteKey, returnKey, lineNumber, insertPoint, directionKey, camerax, cameray, cursorRect, windowWidth, windowHeight, displaySurf, mouseClicked, mouseX, mouseY)
+    
+
     
