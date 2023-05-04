@@ -39,3 +39,20 @@ def main():
     pygame.init()
     FPSCLOCK = pygame.time.Clock()
     
+    windowWidth  = 640
+    windowHeight = 480 
+    lineNumber   = 0
+    newChar      = ''
+    typeChar     = False
+    textString   = ''
+    mainList     = []
+    mainList.append(textString)
+    deleteKey    = False
+    returnKey    = False
+    insertPoint  = 0
+    camerax      = 0
+    cameray      = 0
+    mouseClicked = False
+    mouseX       = 0
+    mouseY       = 
+    
