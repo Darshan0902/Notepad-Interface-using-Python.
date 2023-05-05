@@ -52,7 +52,7 @@ def main():
     insertPoint  = 0
     camerax      = 0
     cameray      = 0
-    mouseClicked = False
+   
     mouseX       = 0
     mouseY       = 0
     
