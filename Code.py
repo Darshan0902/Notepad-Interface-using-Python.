@@ -78,6 +78,15 @@ def main():
                          insertPoint = 0
                          lineNumber = 0
             mainList,lineNumber, insertPoint, cursorRect = displayText(mainFont, newChar, typeChar, mainList, deleteKey, returnKey, lineNumber, insertPoint, directionKey, camerax, cameray, cursorRect, windowWidth, windowHeight, displaySurf, mouseClicked, mouseX, mouseY)
+            displayInfo(insertPoint, mainFont, cursorRect, camerax, windowWidth, windowHeight, displaySurf)
+
+            pygame.display.update()
+            FPSCLOCK.tick(FPS)
+            
+            # Interprets user input and changes mainList, lineNumber, insertPoint and cursorRect accordingly.  There is a function called blitAll() which blits all strings to the main surface. #
+
+
+
     
 
     
