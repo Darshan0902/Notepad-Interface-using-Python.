@@ -98,7 +98,51 @@ def main():
                     
                  elif mouseClicked:
                     insertPoint , lineNumber , cursorRect = setCursorToClick(mainList , cursorRect , mainFont ,  camerax , cameray , mouseX , mouseY)
-                    
+                  
+                 elif directionKey:
+                        if directionKey == LEFT 
+                            if directionKey == 0:
+                                if insertPoint > 0:
+                                    insertPoint -= 1
+                                    stringRect = getStringRectAtInsertPoint( mainList , linenumber , insertPoint , mainFont , camerax  , cameray)
+                                    cursorRect.x = stringRect.right
+                                    cursorRect.y = STARTY
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                     
                     
 
