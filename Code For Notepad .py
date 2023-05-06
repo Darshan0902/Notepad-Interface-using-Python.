@@ -94,7 +94,12 @@ def main():
                     insertPoint = 0
                     cursorRect.x = STARTX
                     stringRect = getStringAtInsertPoint(mainList , lineNumber , insertPoint , mainFont , camerax , cameray )
-                    cursorRect.y = stringRect.top                    
+                    cursorRect.y = stringRect.top    
+                    
+                 elif mouseClicked:
+                    insertPoint , lineNumber , cursorRect = setCursorToClick(mainList , cursorRect , mainFont ,  camerax , cameray , mouseX , mouseY)
+                    
+                    
                     
 
 
