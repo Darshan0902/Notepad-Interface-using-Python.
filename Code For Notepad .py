@@ -84,6 +84,18 @@ def main():
             FPSCLOCK.tick(FPS)
             
             # Interprets user input and changes mainList, lineNumber, insertPoint and cursorRect accordingly.  There is a function called blitAll() which blits all strings to the main surface. #
+            
+            def displayText(mainFont , newChar , typeChar , mainList , deleteKey , returnKey , lineNumber , insertPoint , directionKey , camerax , cameray , cursorRect , windowwidth , windowHeight , displaySurf , mouseClicked , mouseX , mouseY ):
+                if returnKey:
+                    firstString = getStringAtInsertPoint( mainList , lineNumber , insertPoint)
+                    secondString = getStringAfterInsertPoint( mainList , lineNumber , insertPoint)
+                    mainList[lineNumber] +=1
+                    returnKey = False
+                    insertPoint = 0
+                    cursorRect.x = STARTX
+                    stringRect = getStringAtInsertPoint(mainList , lineNumber , insertPoint , mainFont , camerax , cameray )
+                    cursorRect.y = stringRect.top                    
+                    
 
 
 
