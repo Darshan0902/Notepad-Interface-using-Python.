@@ -108,6 +108,16 @@ def main():
                                     cursorRect.x = stringRect.right
                                     cursorRect.y = STARTY
                                     
+                           
+                        
+                        elif lineNumber > 0:
+                            if insertPoint == 0:
+                                lineNumber -= 1
+                                insertPoint = len(mainList[LineNumber])
+                                stringReact = getStringReactAtInsertPoint(mainList , lineNumber , insertPoint , mainFont , camerax , cameray)
+                                cursorRect.x = stringRect.right
+                                cursorRecr.y = STARTY
+                                    
                                     
                                     
                                     
