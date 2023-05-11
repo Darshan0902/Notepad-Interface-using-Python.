@@ -12,7 +12,7 @@ STARTX = 0
 UP = "up"
 DOWN = "down"
 RIGHT = "right"
-
+LEFT = "left"
 # CHOOSING COLORS #
 
 #            R    G    B
