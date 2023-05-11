@@ -11,6 +11,7 @@ STARTY = 0
 STARTX = 0
 UP = "up"
 DOWN = "down"
+RIGHT = "right"
 
 # CHOOSING COLORS #
 
