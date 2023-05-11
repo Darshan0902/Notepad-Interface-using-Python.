@@ -9,6 +9,7 @@ FPS = 30
 TEXT_HEIGHT = 25
 STARTY = 0
 STARTX = 0
+UP = "up"
 
 # CHOOSING COLORS #
 
