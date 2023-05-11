@@ -3,7 +3,7 @@ from pygame.locals import*
 
 # Displaying the constants #
 
-DISPLAY_WIDTH = 760
+DISPLAY_WIDTH = 780
 DISPLAY_HEIGHT = 500
 FPS = 30
 TEXT_HEIGHT=30
