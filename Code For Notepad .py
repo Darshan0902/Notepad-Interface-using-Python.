@@ -10,6 +10,7 @@ TEXT_HEIGHT = 25
 STARTY = 0
 STARTX = 0
 UP = "up"
+DOWN = "down"
 
 # CHOOSING COLORS #
 
