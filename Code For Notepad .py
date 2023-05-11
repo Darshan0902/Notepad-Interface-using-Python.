@@ -4,6 +4,7 @@ from pygame.locals import*
 # Displaying the constants #
 
 DISPLAY_WIDTH = 750 
+DISPLAY_HEIGHT = 500
 
 # CHOOSING COLORS #
 
