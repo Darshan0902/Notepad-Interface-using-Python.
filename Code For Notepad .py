@@ -6,6 +6,7 @@ from pygame.locals import*
 DISPLAY_WIDTH = 750 
 DISPLAY_HEIGHT = 500
 FPS = 30
+TEXT_HEIGHT = 25
 
 # CHOOSING COLORS #
 
