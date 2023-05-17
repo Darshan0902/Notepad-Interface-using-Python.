@@ -115,7 +115,7 @@ def main():
                                 insertPoint = len(mainList[LineNumber])
                                 stringReact = getStringReactAtInsertPoint(mainList , lineNumber , insertPoint , mainFont , camerax , cameray)
                                 cursorRect.x = stringRect.right
-                                cursorRecr.y = STARTY
+                                
                                     
                                     
                                     
