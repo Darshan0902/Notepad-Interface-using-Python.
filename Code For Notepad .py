@@ -154,19 +154,5 @@ def displayText(mainFont, newChar, typeChar, mainList, deleteKey, returnKey, lin
                     stringRect = getStringRectAtInsertPoint(mainList, lineNumber, insertPoint, mainFont, camerax, cameray)
                     cursorRect.x = stringRect.right
                     cursorRect.y = stringRect.top
-                    
-        elif directionKey == UP:
-            if lineNumber > 0:
-                if insertPoint == 0:
-                    lineNumber -= 1
-                    stringRect = getStringRectAtInsertPoint(mainList, lineNumber, insertPoint, mainFont, camerax, cameray)
-                    cursorRect.x = STARTX
-                    cursorRect.y = stringRect.top
-                    
-                elif insertPoint > len(mainList[lineNumber - 1]):
-                    lineNumber -= 1
-                    insertPoint = len(mainList[lineNumber])
-                    stringRect = getStringRectAtInsertPoint(mainList, lineNumber, insertPoint, mainFont, camerax, cameray)
-                    cursorRect.x = stringRect.right
-                    cursorRect.y = stringRect.top
+            
                       
